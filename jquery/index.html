@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>  <style>
+    body {
+      background-color: #bbd3ec;
+    }
+  .sidebar {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 100;
+      padding: 48px 0;
+      background-color: #272626;
+      color: #fff;
+    }
+  .sidebar-heading {
+      font-size: 1.2rem;
+      padding: 0 1rem;
+    }
+   .sidebar-menu {
+      list-style: none;
+  padding-left: 0;
+      margin-top: 2rem;
+    }
+ .sidebar-menu a {
+      display: block;
+      color: rgba(255, 255, 255, 0.8);
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+  .sidebar-menu a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+.content {
+      margin-top: 2rem;
+      padding: 2rem;
+    }
+ .card {
+      background-color: #dcebcc;
+      border: solid;
+      border-color: #44505c;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+ .card:hover {
+      transform: translateY(-5px);
+    }
+ .card-title {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+ .card-text {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block sidebar">
+        <div class="sidebar-heading">Dashboard</div>
+        <ul class="sidebar-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Orders</a></li>
+          <li><a href="#">Customers</a></li>
+          <li><a href="#">Reports</a></li>
+        </ul>
+      </nav>
+      <main class="col-md-10 ml-sm-auto">
+        <div class="content">
+          <h1>Ecommerce Website</h1><br><br>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Content</h5>
+ <p class="card-text">
+                    
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Guidelines</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus animi tempora cumque
+                    doloribus ipsa hic atque magni, nulla dolor iusto, minus ullam. Temporibus possimus atque ipsam
+                    exercitationem sequi? Ad, aperiam!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Top Products</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam a exercitationem nobis. Voluptas ipsum
+                    dolore nulla repellat corrupti blanditiis, neque sunt ipsam non ea aspernatur officiis quam nobis
+                    laboriosam distinctio!
+                  </p>
+                </div>
+              </div>
+            </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,35 @@
+
+
+<body>
+    <h2>Create New Blog Post:</h2>
+    <form>
+        <input type="text" id="title" placeholder="Title" required>
+        <textarea id="body" placeholder="Body" required> </textarea>
+        <button type="button" id="submitBtn"> Submit </button>
+    </form> <br>
+    <h2>Response:</h2>
+    <pre id="response"></pre>
+    <script> document.getElementById("submitBtn").addEventListener("click", function () {
+            let title = document.getElementById("title").value; let body = document.getElementById("body").value; let data = {
+                title: title,
+                body: body
+            };
+            fetch("https://jsonplaceholder.typicode.com/posts", {
+                method: "POST", headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("response").innerHTML = JSON.stringify(
+                        data,
+                        null,
+                        2
+                    );
+                });
+        });
+    </script>
+</body>
+
+</html>

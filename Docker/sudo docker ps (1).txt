@@ -1,0 +1,31 @@
+sudo docker ps
+docker version
+sudo docker run nginx
+PRESS CTRL+C(exit)
+sudo docker run -d nginx
+
+sudo docker ps  -> output {
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
+01e96edf103b   nginx     "/docker-entrypoint.…"   20 seconds ago   Up 20 seconds   80/tcp    elated_meninsky}
+ 
+//then copy above(01e96edf103b) address and paste after stop //
+sudo docker stop 01e96edf103b
+
+sudo docker ps
+sudo docker run -d -p 9000:80 nginx
+sudo docker pull httpd
+mkdir data1(Insert Dockerfile and index.html file in data1 folder)
+cd data1
+sudo docker images
+sudo su
+sudo docker build -t mmcoe .
+sudo docker images 
+sudo docker ps ->output{
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS                                   NAMES
+78e8ecb2b3e8   nginx     "/docker-entrypoint.…"   14 minutes ago   Up 14 minutes   0.0.0.0:9000->80/tcp, :::9000->80/tcp   pensive_blackwell}
+
+//then copy above(78e8ecb2b3e8) address and paste after stop //
+sudo docker stop 78e8ecb2b3e8.
+
+sudo docker stop 78e8ecb2b3e8 
+sudo docker run -d -p 9000:80 mmcoe
